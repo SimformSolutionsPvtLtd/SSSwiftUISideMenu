@@ -3,15 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7B83AFF42AF0EA14004B0E33 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83AFF32AF0EA14004B0E33 /* Home.swift */; };
 		7B83AFFB2AF11ADB004B0E33 /* MyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83AFFA2AF11ADB004B0E33 /* MyFriends.swift */; };
 		7B83AFFD2AF11AE4004B0E33 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83AFFC2AF11AE4004B0E33 /* Settings.swift */; };
-		7B83B0022AF11CDF004B0E33 /* SSSwiftUISideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83B0002AF11CDF004B0E33 /* SSSwiftUISideMenu.swift */; };
-		7B83B0032AF11CDF004B0E33 /* SSMenuConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83B0012AF11CDF004B0E33 /* SSMenuConfig.swift */; };
 		7BB88FD12AEA9139003E5520 /* SSSwiftUISideMenuDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB88FD02AEA9139003E5520 /* SSSwiftUISideMenuDemoApp.swift */; };
 		7BB88FD32AEA9139003E5520 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB88FD22AEA9139003E5520 /* ContentView.swift */; };
 		7BB88FD52AEA913B003E5520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB88FD42AEA913B003E5520 /* Assets.xcassets */; };
@@ -22,13 +20,11 @@
 		7B83AFF32AF0EA14004B0E33 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		7B83AFFA2AF11ADB004B0E33 /* MyFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriends.swift; sourceTree = "<group>"; };
 		7B83AFFC2AF11AE4004B0E33 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		7B83B0002AF11CDF004B0E33 /* SSSwiftUISideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSSwiftUISideMenu.swift; sourceTree = "<group>"; };
-		7B83B0012AF11CDF004B0E33 /* SSMenuConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSMenuConfig.swift; sourceTree = "<group>"; };
-		7BB88FCD2AEA9139003E5520 /* SSSwiftUISideMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSSwiftUISideMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB88FD02AEA9139003E5520 /* SSSwiftUISideMenuDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSSwiftUISideMenuDemoApp.swift; sourceTree = "<group>"; };
 		7BB88FD22AEA9139003E5520 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7BB88FD42AEA913B003E5520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BB88FD72AEA913B003E5520 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BE848832AF2154900EA2C07 /* SSSwiftUISideMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SSSwiftUISideMenuDemo.app; path = "/Users/parthdumaswala/Documents/Subversion/SSSwiftUISideMenu/Example/build/Debug-iphoneos/SSSwiftUISideMenuDemo.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,44 +48,16 @@
 			path = "Container Views";
 			sourceTree = "<group>";
 		};
-		7B83AFFE2AF11CDF004B0E33 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				7B83AFFF2AF11CDF004B0E33 /* SSSwiftUISideMenu */,
-			);
-			name = Sources;
-			path = ../../Sources;
-			sourceTree = "<group>";
-		};
-		7B83AFFF2AF11CDF004B0E33 /* SSSwiftUISideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				7B83B0002AF11CDF004B0E33 /* SSSwiftUISideMenu.swift */,
-				7B83B0012AF11CDF004B0E33 /* SSMenuConfig.swift */,
-			);
-			path = SSSwiftUISideMenu;
-			sourceTree = "<group>";
-		};
 		7BB88FC42AEA9139003E5520 = {
 			isa = PBXGroup;
 			children = (
 				7BB88FCF2AEA9139003E5520 /* SSSwiftUISideMenuDemo */,
-				7BB88FCE2AEA9139003E5520 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		7BB88FCE2AEA9139003E5520 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7BB88FCD2AEA9139003E5520 /* SSSwiftUISideMenuDemo.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7BB88FCF2AEA9139003E5520 /* SSSwiftUISideMenuDemo */ = {
 			isa = PBXGroup;
 			children = (
-				7B83AFFE2AF11CDF004B0E33 /* Sources */,
 				7B83AFF92AF11AC0004B0E33 /* Container Views */,
 				7BB88FD22AEA9139003E5520 /* ContentView.swift */,
 				7BB88FD02AEA9139003E5520 /* SSSwiftUISideMenuDemoApp.swift */,
@@ -114,9 +82,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BB88FDB2AEA913B003E5520 /* Build configuration list for PBXNativeTarget "SSSwiftUISideMenuDemo" */;
 			buildPhases = (
+				94AE78DB047D858A91ECF2F8 /* [CP] Check Pods Manifest.lock */,
 				7BB88FC92AEA9139003E5520 /* Sources */,
 				7BB88FCA2AEA9139003E5520 /* Frameworks */,
 				7BB88FCB2AEA9139003E5520 /* Resources */,
+				DCD716715F13FB1C7DEF8D28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,7 +94,7 @@
 			);
 			name = SSSwiftUISideMenuDemo;
 			productName = SSSwiftUISideMenuDemo;
-			productReference = 7BB88FCD2AEA9139003E5520 /* SSSwiftUISideMenuDemo.app */;
+			productReference = 7BE848832AF2154900EA2C07 /* SSSwiftUISideMenuDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,7 +113,7 @@
 				};
 			};
 			buildConfigurationList = 7BB88FC82AEA9139003E5520 /* Build configuration list for PBXProject "SSSwiftUISideMenuDemo" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -151,7 +121,7 @@
 				Base,
 			);
 			mainGroup = 7BB88FC42AEA9139003E5520;
-			productRefGroup = 7BB88FCE2AEA9139003E5520 /* Products */;
+			productRefGroup = 7BB88FC42AEA9139003E5520;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -172,16 +142,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94AE78DB047D858A91ECF2F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSSwiftUISideMenuDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCD716715F13FB1C7DEF8D28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSSwiftUISideMenuDemo/Pods-SSSwiftUISideMenuDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSSwiftUISideMenuDemo/Pods-SSSwiftUISideMenuDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSSwiftUISideMenuDemo/Pods-SSSwiftUISideMenuDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7BB88FC92AEA9139003E5520 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7BB88FD32AEA9139003E5520 /* ContentView.swift in Sources */,
-				7B83B0022AF11CDF004B0E33 /* SSSwiftUISideMenu.swift in Sources */,
 				7BB88FD12AEA9139003E5520 /* SSSwiftUISideMenuDemoApp.swift in Sources */,
 				7B83AFFB2AF11ADB004B0E33 /* MyFriends.swift in Sources */,
-				7B83B0032AF11CDF004B0E33 /* SSMenuConfig.swift in Sources */,
 				7B83AFFD2AF11AE4004B0E33 /* Settings.swift in Sources */,
 				7B83AFF42AF0EA14004B0E33 /* Home.swift in Sources */,
 			);
@@ -227,7 +237,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -290,7 +300,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
