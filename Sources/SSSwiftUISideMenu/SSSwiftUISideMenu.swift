@@ -11,6 +11,12 @@ public struct MenuItem : Hashable {
     
     var title : String
     var icon : String
+    
+    public init(title: String, icon: String) {
+        self.title = title
+        self.icon = icon
+    }
+    
 }
 
 public struct SSSwiftUISideMenu: View {
@@ -85,4 +91,5 @@ public struct SSSwiftUISideMenu: View {
             }
         }
     }
+    
 }
