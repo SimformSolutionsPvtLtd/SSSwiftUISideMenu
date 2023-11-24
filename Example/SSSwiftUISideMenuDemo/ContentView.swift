@@ -16,6 +16,8 @@ struct ContentView: View {
     
     @State private var selectedIndex: Int = 0
     
+    @State private var menuConfig = SSMenuConfig()
+    
     private var menuItems = [
         MenuItem(title: "Home", icon: "home"),
         MenuItem(title: "My Friends", icon: "friends"),
@@ -28,7 +30,7 @@ struct ContentView: View {
             
             TabView(selection: $selectedIndex) {
                 
-                Home(presentSideMenu: $openSideMenu)
+                Home(presentSideMenu: $openSideMenu, objMenuConfig: $menuConfig)
                     .tag(0)
                 
                 MyFriends(presentSideMenu: $openSideMenu)
@@ -38,7 +40,7 @@ struct ContentView: View {
                     .tag(2)
             }
 
-            SSSwiftUISideMenu(openSideMenu: $openSideMenu, selectedIndex: $selectedIndex, menuItems: menuItems)
+            SSSwiftUISideMenu(openSideMenu: $openSideMenu, selectedIndex: $selectedIndex, menuItems: menuItems, menuConfig: menuConfig)
         }
     }
 }
