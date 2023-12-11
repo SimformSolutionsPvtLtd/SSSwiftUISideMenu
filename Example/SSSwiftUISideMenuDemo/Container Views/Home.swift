@@ -30,6 +30,7 @@ struct Home: View {
     
     // State variables for various configuration options
     @State private var menuDirection = 0
+    @State private var tapToClose = true
     @State private var swipeToClose = true
     @State private var titleColor: Color = .black
     @State private var iconTintColor: Color = .pink
@@ -47,7 +48,8 @@ struct Home: View {
             backgroundColor: backgroundColor,
             animationType: selectedAnimation,
             menuDirection: menuDirection == 0 ? .left : .right,
-            swipeToClose: swipeToClose
+            swipeToClose: swipeToClose,
+            tapToClose: tapToClose
         )
     }
     
@@ -77,6 +79,9 @@ struct Home: View {
                             Text("Right").tag(1)
                         }
                         .pickerStyle(.menu)
+                        
+                        // Toggle for tap to close menu
+                        Toggle("Tap to close menu", isOn: $tapToClose)
                         
                         // Toggle for swipe to close menu
                         Toggle("Swipe to close menu", isOn: $swipeToClose)
@@ -121,7 +126,7 @@ struct Home: View {
                 .padding(.horizontal, -20)
                 .listRowInsets(EdgeInsets())
             }
-            .navigationBarTitle("SSSwiftUI SideMenu", displayMode: .inline)
+            .navigationBarTitle("SSSwiftUISideMenu", displayMode: .inline)
         }
         .padding(.horizontal, 24)
     }
