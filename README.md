@@ -1,4 +1,4 @@
-<a href="https://www.simform.com/"><img src="https://github.com/SimformSolutionsPvtLtd/SSToastMessage/blob/master/simformBanner.png"></a>
+![ScreenShot](/Resources/banner.png)
 
 # SSSwiftUISideMenu
 
@@ -16,44 +16,49 @@ SwiftUI package for creating custom sidemenu with animation and flexible design 
 **About SSSwiftUISideMenu**<br/>
 SSSwiftUISideMenu is highly customisable and easy to use Side menu control for iOS Applications. It support the SideMenu operations from left / right panel. user can navigate through the container views that added with the SideMenu MenuItems. It allows user to customise UI and animation style of their choice.
 
+### Prerequisites
+- iOS 13.0+
+- Xcode 11.0+
+- [CocoaPods](http://cocoapods.org/)
+
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+![ScreenShot](/Resources/SSSwiftUISideMenu_example.gif)
 
-## Requirements
+- To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-This pod requires a deployment target of iOS 13.0 or greater
+# Installation
+#### CocoaPods
 
-## Installation
+- You can use CocoaPods to install `SSSwiftUISideMenu` by adding it to your Podfile:
 
-### Cocoapods
+       use_frameworks!
+       pod 'SSSwiftUISideMenu'
 
-SSSwiftUISideMenu is available through [CocoaPods](https://cocoapods.org). <br/>To install
-it, simply add the following line to your Podfile:
+- Import SSSwiftUISideMenu in your file:
 
-```ruby
-pod 'SSSwiftUISideMenu'
-```
-and run `pod install` from the root directory of project and in your code add `import SSSwiftUISideMenu` and boom you're done.💥
+       import SSSwiftUISideMenu
 
-### Swift Package Manager
+**Manually**
+- Download and drop **SSSwiftUISideMenu/Sources** folder in your project.
+- Grab yourself a cold 🍺.
 
-When using Xcode 11 or later, you can install `SSLineChart` through [Swift Package Manager](https://swift.org/package-manager/) by going to your Project settings > `Swift Packages` and add the repository by providing the GitHub URL. Alternatively, you can go to `File` > `Swift Packages` > `Add Package Dependencies...`
+#### Swift Package Manager (SPM)
+-   When using Xcode 11 or later, you can install `SSSwiftUISideMenu` by going to your Project settings > `Swift Packages` and add the repository by providing the GitHub URL. Alternatively, you can go to `File` > `Swift Packages` > `Add Package Dependencies...`
 
-### Manually
+         dependencies: [
+             .package(url: "https://github.com/mobile-simformsolutions/SSSwiftUISideMenu.git", from: "1.0.0")
+         ]
 
-1. Add `SSSwiftUISideMenu.swift` and `SSMenuConfig.swift` to your project.
-2. Grab yourself a cold 🍺.
+# Usage Examples
 
-## Usage
-
-Import the package in the file you would like to use it: 
+- Import the package in the file you would like to use it: 
 
 ```swiftui
 import SSSwiftUISideMenu
 ```
 
-This library shares one View which you can use as a sidemenu with many customizations like UI, animation, direction and many more.
+- This library shares one View which you can use as a sidemenu with many customizations like UI, animation, direction and many more.
 Basic example:
 
 ```swift
@@ -74,13 +79,12 @@ var body: some Scene {
 ```
 The results of any interaction from sidemenu item will available in declared selectedIndex state variable. Also sidemnu open / close toggle value will be available in the openSideMenu state variable.
 
-Customizations
-===
+# Customizations
 
-You can customize almost every main thing in this library.
-For Customizations you have to pass another value of `menuConfig` during call of SSSwiftUISideMenu. This menuConfig argument is optional as well as Every arguments in `SSMenuConfig` is also Optional. So, you need to add only those arguments which yo wanted to customize. Here's the examples :
+- You can customize almost every main thing in this library.
+- For Customizations you have to pass another value of `menuConfig` during call of SSSwiftUISideMenu. This menuConfig argument is optional as well as Every arguments in `SSMenuConfig` is also Optional. So, you need to add only those arguments which yo wanted to customize. Here's the examples :
 
-Change in Style
+## Change in Style
 -----
 *An example of customisation of styles*
 
@@ -94,7 +98,7 @@ var body: some Scene {
 }
 ```
 
-Change SideMenu direction - Left / Right
+## Change SideMenu direction - Left / Right
 -----
 *An example of change sidemenu direction. left direction is default*
 
@@ -106,7 +110,7 @@ var body: some Scene {
 }
 ```
 
-Add animation to your sidemenu
+## Add animation to your sidemenu
 -----
 *An example of applying a animation type to the sidemenu*
 
@@ -118,10 +122,9 @@ var body: some Scene {
 }
 ```
 
-Other Customizations
-===
+# Other Customizations
 
-SideMenu width
+#### SideMenu width
 ----
 *You can change the menu width of your choice with the menuWidth. By default is '280'.*<br/>
 
@@ -133,13 +136,13 @@ var body: some Scene {
 }
 ```
 
-Icon color and customizations
+#### Icon color and customizations
 -------
 
-1. You can add leftIconPadding argument to change the icon padding from the left side of the sidemenu view.<br/>
-2. You can add imageToTitlePadding argument for adding a padding between a icon and title.<br/>
-3. You can add iconTintColor argument to change the icon tint color of your choice.<br/>
-4. You can add iconHeight and iconWidth argument change the size of the row icons.<br/>
+- You can add leftIconPadding argument to change the icon padding from the left side of the sidemenu view.<br/>
+- You can add imageToTitlePadding argument for adding a padding between a icon and title.<br/>
+- You can add iconTintColor argument to change the icon tint color of your choice.<br/>
+- You can add iconHeight and iconWidth argument change the size of the row icons.<br/>
 
 ```swift
 
@@ -153,13 +156,13 @@ var body: some Scene {
 }
 ```
 
-Show App Version
+#### Show App Version
 -------
 *An example of showing your app version at bottom of the sidemenu. you can configure its style and color. All are optionally configured.*
 
-1. Add showAppVersion argument to weather to show app versio or not. Default is false<br/>
-2. Add versionText argument for adding a pass the text of the version.<br/>
-3. Add versionTitleColor, versionAlignment or versionFont argument to change the font style and color of the version string.<br/>
+- Add showAppVersion argument to weather to show app versio or not. Default is false<br/>
+- Add versionText argument for adding a pass the text of the version.<br/>
+- Add versionTitleColor, versionAlignment or versionFont argument to change the font style and color of the version string.<br/>
 
 ```swift
 
@@ -174,7 +177,7 @@ var body: some Scene {
 
 ## Coming Soon
 
-1. Pass custom view directly to the sidemenu to create sidemenu of your choice.<br/>
+- Pass custom view directly to the sidemenu to create sidemenu of your choice.<br/>
 
 **Up for a suggestions. Give suggestions for more features and customisations.**
 
@@ -200,4 +203,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [PR-url]:http://makeapullrequest.com
 [swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg
 [swift-url]: https://swift.org/
-

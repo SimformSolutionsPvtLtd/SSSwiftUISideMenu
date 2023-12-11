@@ -44,6 +44,8 @@ public struct SSMenuConfig {
     private(set) var menuDirection: Directions
     /** Boolean for whether you want the menu close on swipe gesture . Default is: Enabled**/
     private(set) var swipeToClose: Bool
+    /** Boolean for whether you want the close the menu on tap gesture(out side) . Default is: Enabled**/
+    private(set) var tapToClose: Bool
     /** Boolean for whether you want to show App version . Default is: False**/
     private(set) var showAppVersion: Bool
     /** Specify the App version string . Default is: Empty**/
@@ -71,6 +73,7 @@ public struct SSMenuConfig {
         animationType: Animation = .default,
         menuDirection: Directions = .left,
         swipeToClose: Bool = true,
+        tapToClose: Bool = true,
         showAppVersion: Bool = false,
         versionText: String = "",
         versionFont: Font = .caption,
@@ -92,6 +95,7 @@ public struct SSMenuConfig {
         self.animationType = animationType
         self.menuDirection = menuDirection
         self.swipeToClose = swipeToClose
+        self.tapToClose = tapToClose
         self.showAppVersion = showAppVersion
         self.versionText = versionText
         self.versionFont = versionFont

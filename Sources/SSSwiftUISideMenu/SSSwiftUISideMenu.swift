@@ -60,6 +60,7 @@ public struct SSSwiftUISideMenu: View {
                                 Button(action: {
                                     withAnimation(.spring()) {
                                         self.selectedIndex = value
+                                        if menuConfig.tapToClose { return }
                                         self.openSideMenu.toggle()
                                     }
                                 }, label: {
@@ -121,6 +122,13 @@ public struct SSSwiftUISideMenu: View {
                     }
                 }
             })
+        .gesture(
+            TapGesture()
+                .onEnded { _ in
+                    if !menuConfig.tapToClose { return }
+                    self.openSideMenu.toggle()
+                }
+        )
     }
     
 }
