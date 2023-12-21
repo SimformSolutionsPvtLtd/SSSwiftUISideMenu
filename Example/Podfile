@@ -3,5 +3,5 @@ use_frameworks!
 platform :ios, '13.0'
 
 target 'SSSwiftUISideMenuDemo' do
-  pod 'SSSwiftUISideMenu', :path => '../'
+  pod 'SSSwiftUISideMenu'
 end

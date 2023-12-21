@@ -1,4 +1,4 @@
-![ScreenShot](/Resources/banner.png)
+<img width="1280" alt="banner" src="https://github.com/SimformSolutionsPvtLtd/SSSwiftUISideMenu/assets/63283381/c9485bc9-c753-4f5d-b165-be6b65f8c843">
 
 # SSSwiftUISideMenu
 
@@ -23,7 +23,7 @@ SSSwiftUISideMenu is highly customisable and easy to use Side menu control for i
 
 ## Example
 
-![ScreenShot](/Resources/SSSwiftUISideMenu_example.gif)
+![SSSwiftUISideMenu_example](https://github.com/SimformSolutionsPvtLtd/SSSwiftUISideMenu/assets/63283381/9c70c998-26ed-48b4-8aff-3ee44bf727a8)
 
 - To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
