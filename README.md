@@ -8,20 +8,24 @@
 [![PRs Welcome][PR-image]][PR-url]
 [![Twitter](https://img.shields.io/badge/Twitter-@simform-blue.svg?style=flat)](https://twitter.com/simform)
 
-SwiftUI package for creating custom sidemenu with animation and flexible design as per your choice.
+SSSwiftUISideMenu: Effortless Side Navigation in SwiftUI
 
-![Example of SSSwiftUISideMenu](GIFs/MainGif.gif)<br/>
-*An example of Custom SideMenu created with this library*
+Create sleek and customizable side menus effortlessly in SwiftUI with SSSwiftUISideMenu. This SwiftUI library simplifies the implementation of side menus, allowing you to enhance the navigation and user experience of your iOS apps. With a focus on flexibility and ease of use, SSSwiftUISideMenu empowers developers to integrate stylish side menus seamlessly into their SwiftUI projects.
 
-**About SSSwiftUISideMenu**<br/>
-SSSwiftUISideMenu is highly customisable and easy to use Side menu control for iOS Applications. It support the SideMenu operations from left / right panel. user can navigate through the container views that added with the SideMenu MenuItems. It allows user to customise UI and animation style of their choice.
+## Features
 
-### Prerequisites
+- [x] Highly customizable
+- [x] Multiple options of animations
+- [x] Right panel support
+
+### Requirements
 - iOS 13.0+
 - Xcode 11.0+
 - [CocoaPods](http://cocoapods.org/)
 
 ## Example
+![Example of SSSwiftUISideMenu](GIFs/MainGif.gif)
+*An example of Custom SideMenu created with this library*
 
 ![SSSwiftUISideMenu_example](https://github.com/SimformSolutionsPvtLtd/SSSwiftUISideMenu/assets/63283381/9c70c998-26ed-48b4-8aff-3ee44bf727a8)
 
